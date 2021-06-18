@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<div class="container">
+     <div class="sidebar">
+        <h3>Supported services:</h3><br />
+        <small>(coming soon)</small>
+        <img src="/images/epitech_footer-1.png" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/fb-logo.jpeg" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/tt-logo.jpeg" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/yammer.jpeg" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/one-drive.jpeg" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/msoffice.jpeg" style="width:245px; height: 60px;" /><hr />
+        <img src="/images/rss-logo.jpeg" style="width:245px; height: 60px;" /><hr />
+    </div>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>Hi, {{ user.username }}!</h2>
+            <p> Pick a service on your left to begin</p>  
+            <small> dont!</small>
+            <div class="col-md-8 offset-md-3">
+                <img src="/images/fb-logo.jpeg" style="width:245px; height: 60px;" />
+            </div>
+        </div>
+        <div class="logout-top-right">
+            <a href="{{ path('app_logout') }}" class="btn btn-outline-danger btn-lg">
+            LOGOUT</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            
+            <div class="col-md-3 btn-group-sm btn-group-vertical">
+                <h4>Actions:</h4>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Messages
+                    </button>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Posts
+                    </button>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Likes
+                    </button>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Groups
+                    </button>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Notifications
+                    </button>
+                    <button class="btn btn-block btn-sm btn-secondary">
+                    Manage actions</button>
+                             
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
